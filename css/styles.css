@@ -1,0 +1,101 @@
+/* Reset básico: hace que el tamaño de las cajas sea más fácil de controlar */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos generales de toda la página */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6fa;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* Hace que las imágenes no se salgan de su contenedor */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Encabezado principal */
+header {
+  background-color: #1F3864;
+  color: white;
+  padding: 20px;
+}
+
+/* Título/logo */
+header h1 {
+  margin: 0;
+}
+
+/* Enlaces del menú */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+/* Contenido principal */
+main {
+  padding: 20px;
+}
+
+/* Secciones generales */
+section,
+aside {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+}
+
+/* Títulos de sección */
+h2,
+h3 {
+  color: #1F3864;
+}
+
+/* Botón o enlace principal */
+a {
+  color: #1F3864;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Campos del formulario */
+input {
+  padding: 10px;
+  border: 1px solid #94a3b8;
+}
+
+/* Botón del formulario */
+button {
+  background-color: #1F3864;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+/* Foco visible para accesibilidad */
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid #FFC000;
+  outline-offset: 3px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #1F3864;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
