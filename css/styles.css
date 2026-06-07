@@ -18,11 +18,16 @@ img {
   height: auto;
 }
 
-/* Encabezado principal */
-header {
-  background-color: #1F3864;
+/* Header: parte superior de la página */
+ header {
+ background-color: #1F3864;
   color: white;
   padding: 20px;
+
+  /* Flexbox acomoda el logo y el menú */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* Título/logo */
@@ -30,11 +35,17 @@ header h1 {
   margin: 0;
 }
 
-/* Enlaces del menú */
+/* Nav: menú de navegación */
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 nav a {
   color: white;
   text-decoration: none;
-  margin-right: 16px;
+  font-weight: bold;
 }
 
 /* Contenido principal */
@@ -98,4 +109,17 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+/* Primer breakpoint: tablet */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: row;
+  }
 }
