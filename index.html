@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8">
+
+  <!-- Permite que la página se adapte a celular, tablet y escritorio -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título que aparece en la pestaña del navegador -->
+  <title>StudyFlow - Landing Page</title>
+
+  <!-- Conexión con la hoja de estilos externa -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Encabezado principal de la página: logo/nombre y navegación -->
+  <header>
+    <h1>StudyFlow</h1>
+
+    <!-- Menú de navegación principal -->
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#funciones">Funciones</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal de la página -->
+  <main>
+
+    <!-- Sección hero: primera parte visible de la landing page -->
+    <section id="inicio">
+      <h2>Organiza tu vida universitaria en un solo lugar</h2>
+      <p>
+        StudyFlow ayuda a estudiantes universitarios a organizar cursos,
+        tareas, fechas de entrega y rutinas de estudio.
+      </p>
+      <a href="#funciones">Conocer funciones</a>
+    </section>
+
+    <!-- Sección de funciones principales de la app -->
+    <section id="funciones">
+      <h2>Funciones principales</h2>
+
+      <!-- Article representa una tarjeta independiente de contenido -->
+      <article>
+        <h3>Gestión de cursos</h3>
+        <p>Organiza tus materias, horarios e información importante.</p>
+      </article>
+
+      <article>
+        <h3>Recordatorios de tareas</h3>
+        <p>Lleva el control de entregas, exámenes y proyectos.</p>
+      </article>
+
+      <article>
+        <h3>Progreso de estudio</h3>
+        <p>Visualiza tus hábitos de estudio y mejora tu rendimiento semanal.</p>
+      </article>
+    </section>
+
+    <!-- Sección de beneficios generales -->
+    <section id="beneficios">
+      <h2>Beneficios para estudiantes</h2>
+      <p>
+        La plataforma busca mejorar la organización académica, reducir olvidos
+        y facilitar una rutina de estudio más constante.
+      </p>
+    </section>
+
+    <!-- Aside: contenido complementario, no es el contenido principal -->
+    <aside>
+      <h2>Consejo académico</h2>
+      <p>
+        Planificar tus entregas con anticipación puede ayudarte a reducir el estrés
+        durante el cuatrimestre.
+      </p>
+    </aside>
+
+    <!-- Sección de contacto con formulario semántico -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+
+      <!-- Formulario para que el usuario ingrese datos -->
+      <form>
+        <!-- Label se asocia al input usando for e id -->
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo">
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2026 StudyFlow. Proyecto académico ISW-521.</p>
+  </footer>
+
+  <!-- Conexión con JavaScript externo -->
+  <script src="js/script.js"></script>
+</body>
+</html>
