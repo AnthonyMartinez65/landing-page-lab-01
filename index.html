@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <!-- Configuración básica del documento -->
   <meta charset="UTF-8">
@@ -8,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Título que aparece en la pestaña del navegador -->
-  <title>StudyFlow - Landing Page</title>
+  <title>Mi Agenda U - Landing Page</title>
 
   <!-- Conexión con la hoja de estilos externa -->
   <link rel="stylesheet" href="css/styles.css">
@@ -18,7 +19,7 @@
 
   <!-- Encabezado principal de la página: logo/nombre y navegación -->
   <header>
-    <h1>StudyFlow</h1>
+    <h1>Mi Agenda U</h1>
 
     <!-- Menú de navegación principal -->
     <nav aria-label="Navegación principal">
@@ -33,35 +34,40 @@
   <main>
 
     <!-- Sección hero: primera parte visible de la landing page -->
-    <section id="inicio">
+    <section id="inicio" class="hero">
       <h2>Organiza tu vida universitaria en un solo lugar</h2>
       <p>
-        StudyFlow ayuda a estudiantes universitarios a organizar cursos,
+        Mi Agenda U ayuda a estudiantes universitarios a organizar cursos,
         tareas, fechas de entrega y rutinas de estudio.
       </p>
-      <a href="#funciones">Conocer funciones</a>
+      <a class="boton-principal" href="#funciones">Conocer funciones</a>
     </section>
 
-    <!-- Sección de funciones principales de la app -->
     <section id="funciones">
       <h2>Funciones principales</h2>
 
-      <!-- Article representa una tarjeta independiente de contenido -->
-      <article>
-        <h3>Gestión de cursos</h3>
-        <p>Organiza tus materias, horarios e información importante.</p>
-      </article>
+      <!-- Contenedor de tarjetas: aquí se aplicará CSS Grid -->
+      <div class="funciones-grid">
 
-      <article>
-        <h3>Recordatorios de tareas</h3>
-        <p>Lleva el control de entregas, exámenes y proyectos.</p>
-      </article>
+        <article class="tarjeta-funcion">
+          <h3>Gestión de cursos</h3>
+          <p>Organiza tus materias, horarios e información importante.</p>
+        </article>
 
-      <article>
-        <h3>Progreso de estudio</h3>
-        <p>Visualiza tus hábitos de estudio y mejora tu rendimiento semanal.</p>
-      </article>
+        <article class="tarjeta-funcion">
+          <h3>Recordatorios de tareas</h3>
+          <p>Lleva el control de entregas, exámenes y proyectos.</p>
+        </article>
+
+        <article class="tarjeta-funcion">
+          <h3>Progreso de estudio</h3>
+          <p>Visualiza tus hábitos de estudio y mejora tu rendimiento semanal.</p>
+        </article>
+
+      </div>
     </section>
+
+
 
     <!-- Sección de beneficios generales -->
     <section id="beneficios">
@@ -101,10 +107,11 @@
 
   <!-- Pie de página -->
   <footer>
-    <p>© 2026 StudyFlow. Proyecto académico ISW-521.</p>
+    <p>© 2026 Mi Agenda U.  ISW-521.</p>
   </footer>
 
   <!-- Conexión con JavaScript externo -->
   <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -50,6 +50,8 @@ nav a {
 
 /* Contenido principal */
 main {
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -103,6 +105,64 @@ input:focus {
   outline-offset: 3px;
 }
 
+/* Hero: primera sección visual de la landing */
+.hero {
+  background-color: #e8eef8;
+  text-align: center;
+  padding: 48px 20px;
+}
+
+/* Título principal del hero */
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+/* Párrafo principal del hero */
+.hero p {
+  max-width: 650px;
+  margin: 0 auto 24px auto;
+}
+
+/* Botón principal del hero */
+.boton-principal {
+  display: inline-block;
+  background-color: #1F3864;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero: primera sección visual de la landing */
+.hero {
+  background-color: #e8eef8;
+  text-align: center;
+  padding: 48px 20px;
+}
+
+/* Título principal del hero */
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+/* Párrafo principal del hero */
+.hero p {
+  max-width: 650px;
+  margin: 0 auto 24px auto;
+}
+
+/* Botón principal del hero */
+.boton-principal {
+  display: inline-block;
+  background-color: #1F3864;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Grid de funciones: organiza las tarjetas en columnas */
 .funciones-grid {
   display: grid;
@@ -145,5 +205,13 @@ footer {
 @media (min-width: 1024px) {
   .funciones-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero {
+    padding: 72px 40px;
+  }
+
+  .hero h2 {
+    font-size: 44px;
   }
 }
