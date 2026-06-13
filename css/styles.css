@@ -163,6 +163,20 @@ input:focus {
   font-weight: bold;
 }
 
+/* Sección con imagen universitaria */
+.vida-universitaria {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Imagen de la sección universitaria */
+.vida-universitaria img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+}
+
 /* Grid de funciones: organiza las tarjetas en columnas */
 .funciones-grid {
   display: grid;
@@ -213,5 +227,14 @@ footer {
 
   .hero h2 {
     font-size: 44px;
+  }
+    .vida-universitaria {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .vida-universitaria div,
+  .vida-universitaria img {
+    flex: 1;
   }
 }
