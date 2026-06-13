@@ -200,6 +200,66 @@ footer {
   padding: 20px;
 }
 
+/* Botón para cambiar tema */
+.theme-toggle {
+  background-color: #FFC000;
+  color: #1F3864;
+  border: none;
+  padding: 10px 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Modo oscuro guardado con localStorage */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #0f172a;
+}
+
+body.dark-mode section,
+body.dark-mode aside {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+body.dark-mode .hero {
+  background-color: #1e293b;
+}
+
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #FFC000;
+}
+
+body.dark-mode a {
+  color: #FFC000;
+}
+
+body.dark-mode nav a {
+  color: white;
+}
+
+body.dark-mode .boton-principal {
+  background-color: #FFC000;
+  color: #1F3864;
+}
+
+body.dark-mode .tarjeta-funcion,
+body.dark-mode .beneficio-card {
+  background-color: #0f172a;
+  border-color: #334155;
+}
+
+body.dark-mode .consejo {
+  background-color: #1e293b;
+  border-left-color: #FFC000;
+}
+
 /* Primer breakpoint: tablet */
 @media (min-width: 768px) {
   header {
