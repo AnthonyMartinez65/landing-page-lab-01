@@ -17,27 +17,27 @@
 
 <body>
 
-  <!-- Encabezado principal de la página: logo/nombre y navegación -->
+  <!-- Encabezado principal de la página: logo/nombre, navegación y botón de tema -->
   <header>
-  <h1>Mi Agenda U</h1>
+    <h1>Mi Agenda U</h1>
 
-  <!-- Menú de navegación principal -->
-  <nav aria-label="Navegación principal">
-    <a href="#inicio">Inicio</a>
-    <a href="#funciones">Funciones</a>
-    <a href="#beneficios">Beneficios</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+    <!-- Menú de navegación principal -->
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#funciones">Funciones</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
-  <!-- Botón para cambiar entre modo claro y modo oscuro -->
-  <button 
-    id="theme-toggle" 
-    class="theme-toggle" 
-    type="button" 
-    aria-label="Cambiar a modo oscuro">
-    Modo oscuro
-  </button>
-</header>
+    <!-- Botón para cambiar entre modo claro y modo oscuro -->
+    <button 
+      id="theme-toggle" 
+      class="theme-toggle" 
+      type="button" 
+      aria-label="Cambiar a modo oscuro">
+      Modo oscuro
+    </button>
+  </header>
 
   <!-- Contenido principal de la página -->
   <main>
@@ -52,12 +52,14 @@
       <a class="boton-principal" href="#funciones">Conocer funciones</a>
     </section>
 
+    <!-- Sección de funciones principales de la aplicación -->
     <section id="funciones">
       <h2>Funciones principales</h2>
 
       <!-- Contenedor de tarjetas: aquí se aplicará CSS Grid -->
       <div class="funciones-grid">
 
+        <!-- Article representa una tarjeta independiente de contenido -->
         <article class="tarjeta-funcion">
           <h3>Gestión de cursos</h3>
           <p>Organiza tus materias, horarios e información importante.</p>
@@ -76,38 +78,53 @@
       </div>
     </section>
 
-
-
     <!-- Sección de beneficios generales -->
     <section id="beneficios">
       <h2>Beneficios para estudiantes</h2>
-      <p>
-        La plataforma busca mejorar la organización académica, reducir olvidos
-        y facilitar una rutina de estudio más constante.
-      </p>
+
+      <!-- Contenedor de beneficios: se puede organizar con CSS Grid -->
+      <div class="beneficios-grid">
+
+        <article class="beneficio-card">
+          <h3>Mejor organización</h3>
+          <p>Permite ordenar cursos, tareas y fechas importantes en un solo lugar.</p>
+        </article>
+
+        <article class="beneficio-card">
+          <h3>Menos olvidos</h3>
+          <p>Ayuda a recordar entregas, exámenes y actividades del cuatrimestre.</p>
+        </article>
+
+        <article class="beneficio-card">
+          <h3>Rutina de estudio</h3>
+          <p>Favorece una planificación más constante y una mejor distribución del tiempo.</p>
+        </article>
+
+      </div>
     </section>
 
     <!-- Sección visual sobre la vida universitaria -->
-<section class="vida-universitaria">
-  <div>
-    <h2>Una herramienta pensada para estudiantes</h2>
-    <p>
-      Mi Agenda U está diseñada para apoyar la organización académica de estudiantes
-      universitarios durante el cuatrimestre.
-    </p>
-  </div>
+    <section class="vida-universitaria">
+      <div>
+        <h2>Una herramienta pensada para estudiantes</h2>
+        <p>
+          Mi Agenda U está diseñada para apoyar la organización académica de estudiantes
+          universitarios durante el cuatrimestre.
+        </p>
+      </div>
 
-  <img 
-    src="img/vida-universitaria.jpg" 
-    alt="Grupo de estudiantes universitarios en una actividad académica"
-    loading="lazy">
-</section>
+      <!-- Imagen con texto alternativo para accesibilidad -->
+      <img 
+        src="img/vida-universitaria.jpg" 
+        alt="Grupo de estudiantes universitarios en una actividad académica"
+        loading="lazy">
+    </section>
 
     <!-- Aside: contenido complementario, no es el contenido principal -->
-    <aside>
+    <aside class="consejo">
       <h2>Consejo académico</h2>
       <p>
-        Nunca dejes las cosas para ultima hora.
+        Nunca dejes las cosas para última hora.
       </p>
     </aside>
 
@@ -119,19 +136,39 @@
       <form>
         <!-- Label se asocia al input usando for e id -->
         <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre">
+        <input 
+          type="text" 
+          id="nombre" 
+          name="nombre" 
+          autocomplete="name" 
+          required>
 
         <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" name="correo">
+        <input 
+          type="email" 
+          id="correo" 
+          name="correo" 
+          autocomplete="email" 
+          required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea 
+          id="mensaje" 
+          name="mensaje" 
+          rows="4" 
+          required></textarea>
 
         <button type="submit">Enviar</button>
+        
+        <p id="form-message" class="form-message" aria-live="polite"></p>
       </form>
     </section>
+
   </main>
 
   <!-- Pie de página -->
   <footer>
-    <p>© 2026 Mi Agenda U.  ISW-521.</p>
+    <p>© 2026 Mi Agenda U. Proyecto académico ISW-521.</p>
   </footer>
 
   <!-- Conexión con JavaScript externo -->

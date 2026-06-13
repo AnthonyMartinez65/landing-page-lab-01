@@ -4,26 +4,41 @@ const themeToggle = document.getElementById("theme-toggle");
 // Revisar si el usuario ya había guardado una preferencia
 const savedTheme = localStorage.getItem("theme");
 
-// Si la preferencia guardada es "dark", se activa el modo oscuro al cargar la página
-if (savedTheme === "dark") {
+// Aplicar modo oscuro si estaba guardado
+if (themeToggle && savedTheme === "dark") {
   document.body.classList.add("dark-mode");
   themeToggle.textContent = "Modo claro";
   themeToggle.setAttribute("aria-label", "Cambiar a modo claro");
 }
 
 // Evento click para cambiar el tema
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
 
-  const isDarkMode = document.body.classList.contains("dark-mode");
+    const isDarkMode = document.body.classList.contains("dark-mode");
 
-  if (isDarkMode) {
-    localStorage.setItem("theme", "dark");
-    themeToggle.textContent = "Modo claro";
-    themeToggle.setAttribute("aria-label", "Cambiar a modo claro");
-  } else {
-    localStorage.setItem("theme", "light");
-    themeToggle.textContent = "Modo oscuro";
-    themeToggle.setAttribute("aria-label", "Cambiar a modo oscuro");
-  }
-});
+    if (isDarkMode) {
+      localStorage.setItem("theme", "dark");
+      themeToggle.textContent = "Modo claro";
+      themeToggle.setAttribute("aria-label", "Cambiar a modo claro");
+    } else {
+      localStorage.setItem("theme", "light");
+      themeToggle.textContent = "Modo oscuro";
+      themeToggle.setAttribute("aria-label", "Cambiar a modo oscuro");
+    }
+  });
+}
+
+// Mensaje visual al enviar el formulario
+const contactForm = document.querySelector("#contacto form");
+const formMessage = document.getElementById("form-message");
+
+if (contactForm && formMessage) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    formMessage.textContent = "Gracias por tu mensaje. Pronto te contactaremos.";
+    contactForm.reset();
+  });
+}

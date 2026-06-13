@@ -83,9 +83,11 @@ form {
 }
 
 /* Campos del formulario */
-input {
+input,
+textarea {
   padding: 10px;
   border: 1px solid #94a3b8;
+  font-family: Arial, sans-serif;
 }
 
 /* Botón del formulario */
@@ -96,11 +98,17 @@ button {
   padding: 12px;
   cursor: pointer;
 }
+/* Mensaje que aparece cuando el formulario se envía */
+.form-message {
+  font-weight: bold;
+  color: #1F3864;
+}
 
 /* Foco visible para accesibilidad */
 a:focus,
 button:focus,
-input:focus {
+input:focus,
+textarea:focus {
   outline: 3px solid #FFC000;
   outline-offset: 3px;
 }
@@ -258,6 +266,9 @@ body.dark-mode .beneficio-card {
 body.dark-mode .consejo {
   background-color: #1e293b;
   border-left-color: #FFC000;
+}
+body.dark-mode .form-message {
+  color: #FFC000;
 }
 
 /* Primer breakpoint: tablet */
