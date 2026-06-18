@@ -261,6 +261,28 @@ body.dark-mode .consejo {
 body.dark-mode .form-message {
   color: #FFC000;
 }
+/* Efecto al pasar el mouse sobre enlaces y botones */
+a:hover,
+button:hover {
+  opacity: 0.9;
+}
+
+/* Efecto al pasar el mouse sobre las tarjetas */
+.tarjeta-funcion:hover,
+.beneficio-card:hover {
+  border-color: #1F3864;
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+/* Transiciones suaves para que el hover no sea brusco */
+.tarjeta-funcion,
+.beneficio-card,
+.boton-principal,
+.theme-toggle,
+button {
+  transition: all 0.2s ease;
+}
 
 /* Primer breakpoint: tablet */
 @media (min-width: 768px) {
